@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Rubik+Pixels&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="./index.html"><img src="./images/logo.svg" alt="logo"></a>
+                </div>
+                <div class="action__wrapper">
+                    <div class="switcher">
+                        <a href="./index.html">EN</a>
+                        <span>|</span>
+                        <a href="./ua.html"> UA</a>
+                    </div>
+                    <div class="burger__menu">
+                        <button type="button" class="nav-button" data-menu-button>
+                            <svg class="menu-icon " width="40" height="40" aria-label="switcher of mobile menu">
+                                <use class="menu-icon-open" href="./images/symb.svg#menu-icon-open"> </use>
+                                <use class="menu-icon-close" href="./images/symb.svg#menu-icon-close"> </use>
+                            </svg>
+                        </button>
+                        <ul class="header_links menu" data-menu>
+                            <li><a data-menu-link href="#aboutUs">about us</a></li>
+                            <li><a data-menu-link href="#ourMission">our mission</a></li>
+                            <li><a data-menu-link href="#howToUse">how to use</a></li>
+                            <li><a data-menu-link href="#OurTeam">our team</a></li>
+                            <li><a data-menu-link href="#Cooperation">cooperation</a></li>
+                            <li><a data-menu-link href="#contact">contact to us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="hero__wrapper">
+                <div>
+                    <h1></h1>
+                    <button class="hero-btn">Download the app soon</button>
+                </div>
+                <div class="hero__additional_img">
+                    <img src="./images/screen_top.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="aboutUs" class="about">
+            <div class="container">
+                <div class="about__block">
+                    <h2 class="about__title hidden">ПРО НАС</h2>
+                    <div class="about__wrapper">
+                        <div class="about__img-wrapper">
+                            <img src="./images/about_us_photo.jpg" alt="about us photo">
+                        </div>
+                        <div class="about__text-block">
+                            <h2 class="about__title">ПРО НАС</h2>
+                            <div class="limited" id="content">
+                                <p class="about__text">
+                                    Наша команда — инициативная группа, из города Днепр, который в свою очередь находится в
+                                    Украине!
+                                    За последний год, нам довелось пережить слишком много бед и утрат, но выход из зоны
+                                    комфорта,
+                                    нам позволил посмотреть на вещи совсем под другим углом.
+    
+                                    Миллионы людей были вынуждены эмигрировать, оставляя свои дома, уцелевшие и разрушенные,
+                                    пустые
+                                    и заселенные военными, представляющих страну агрессора, и одному Богу известно, сколько
+                                    покалеченных судеб и растворившихся человеческих историй мы потеряли, начиная с 24
+                                    февраля
+                                    2022
+                                    года.
+                                </p>
+                                <p>Мы понимаем, что семья — это самое главное в жизни, и мы хотим помочь вам сохранить
+                                    память о
+                                    вашей семье.</p>
+                                <ul style="list-style-type: disc; padding-left:40px; margin: 20px 0px">
+                                    <li>
+                                        Наше приложение использует очень надежный сервер для хранилища данных и настройки по
+                                        безопасности Hetzner.
+                                    </li>
+                                    <li>
+                                        Мы также гарантируем скорость загрузки и передачи ваших данных на высокой скорости.
+                                    </li>
+                                    <li>Наш продукт рассчитан на сбережение ценности и памяти вашей семьи даже через много
+                                        лет,
+                                        войдя в семейный или личный аккаунт.
+                                    </li>
+                                </ul>
+                                <p>Помощь в сборе средств для этого приложения поможет нашей команде сохранить жизни тысячи
+                                    человек, даже тех которых героически пали защищая нашу страну.
+                                </p>
+                            </div>
+                            <div class="btn__secondary-wrapper">
+                                <button id="content_btn" class="btn__secondary">[ читать дальше ]</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="main__bg">
+            <div class="container">
+                <section id="ourMission" class="mission">
+                    <h2 class="ourMission__title">НАША МІСІЯ</h2>
+                    <div class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide_1">
+                                <div class="mission__card">
+                                    <h3>Миссия</h3>
+                                    <p class="mission__text">
+                                        В наше время мы очень ценим простоту функциональность и надежность. В нашем
+                                        приложении мы используем только проверенные временем сервера(ссылка + описание),
+                                        постарались создать простое и понятное, но в то же время со своими
+                                        функциональными особенностями и спецификациями. Наш дизайн создавался для людей
+                                        которые ценят свое время и не хотят тратить его для того что бы понять как им
+                                        пользоваться
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide_2">
+                                <div class="mission__card">
+                                    <h3>Миссия</h3>
+                                    <p class="mission__text">Так же мы хотим упростить и сократить время пользователей
+                                        использование всесторонних приложений которыми люди пользуются для
+                                        редактирования, улучшения, модификации фото/видео. Поэтому мы создали продукт
+                                        который создан для семьи и покрывает все необходимые функции которые вам могут
+                                        понадобиться в этом сегменте.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide_3">
+                                <div class="mission__card">
+                                    <h3>Миссия</h3>
+                                    <p class="mission__text">Наша миссия улучшать и быть комьюнити ориентированными, для
+                                        этого вы можете добавлять свои предложения и отправлять нам на почту и соц сети.
+                                        Мы прислушаемся ко всем пожеланиям наших больших и маленьких семей. В том числе
+                                        наши цены
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination swiper-pagination2"></div>
+                        <div class="swiper-button-next swiper-button-next2"></div>
+                        <div class="swiper-button-prev swiper-button-prev2"></div>
+                    </div>
+                </section>
+                <section id="howToUse" class="usage">
+                    <h2 class="usage__title">КАК ИСПОЛЬЗОВАТЬ</h2>
+                    <div class="swiper mySwiper4">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide_1">
+                                <div class="usage__card">
+                                    <img src="./images/how_to_use_img.png" alt="mobile">
+                                    <p>orem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                                        euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+                                        lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+                                        dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore
+                                        eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
+                                        blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
+                                        facilisi.
+                                        Lorem ipsum dolor sit amet, cons ectetuer
+                                        orem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                                        euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide_2">
+                                <div class="usage__card">
+                                    <img src="./images/how_to_use_img.png" alt="mobile">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                                        nibh
+                                        euismod tincidunt ut laoreet dolore
+                                        magna aliquam erat volutpat.
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                                        nibh
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide_3">
+                                <div class="usage__card">
+                                    <img src="./images/how_to_use_img.png" alt="mobile">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                                        nibh
+                                        euismod tincidunt ut laoreet dolore
+                                        magna aliquam erat volutpat.
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                                        nibh
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination swiper-pagination4"></div>
+                        <div class="swiper-button-next swiper-next4"></div>
+                        <div class="swiper-button-prev swiper-prev4"></div>
+                    </div>
+
+
+
+
+
+
+                </section>
+                <section id="OurTeam" class="people">
+                    <h2 class="people__title">НАШИ ЛЮДИ</h2>
+                    <div class="desktop__people">
+                        <ul class="desktop__people-list">
+                            <li class="people__card">
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img class="people__img" src="./images/Group.png" alt="Avatar">
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <div class="people__info">
+                                                <h3>Владислав Озеров</h3>
+                                                <h4>директор по рекламе</h4>
+                                                <ul>
+                                                    <li class="social-item">
+                                                        <img src="./images/facebook.svg" alt="facebookicon">
+                                                    </li>
+                                                    <li class="social-item">
+                                                        <img src="./images/twitter.svg" alt="twitter icon">
+                                                    </li>
+                                                    <li class="social-item">
+                                                        <img src="./images/insta.svg" alt="instagram icon">
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="people__card">
+                                <div class="our-people-wrapper">
+                                    <span>НАШИ ЛЮДИ</span>
+                                </div>
+                            </li>
+                            <li class="people__card">
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img class="people__img" src="./images/Group.png" alt="Avatar">
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <div class="people__info">
+                                                <h3>Владислав Озеров</h3>
+                                                <h4>директор по рекламе</h4>
+                                                <ul>
+                                                    <li class="social-item">
+                                                        <img src="./images/facebook.svg" alt="facebookicon">
+                                                    </li>
+                                                    <li class="social-item">
+                                                        <img src="./images/twitter.svg" alt="twitter icon">
+                                                    </li>
+                                                    <li class="social-item">
+                                                        <img src="./images/insta.svg" alt="instagram icon">
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="people__card">
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img class="people__img" src="./images/Group.png" alt="Avatar">
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <div class="people__info">
+                                                <h3>Владислав Озеров</h3>
+                                                <h4>директор по рекламе</h4>
+                                                <ul>
+                                                    <li class="social-item">
+                                                        <img src="./images/facebook.svg" alt="facebookicon">
+                                                    </li>
+                                                    <li class="social-item">
+                                                        <img src="./images/twitter.svg" alt="twitter icon">
+                                                    </li>
+                                                    <li class="social-item">
+                                                        <img src="./images/insta.svg" alt="instagram icon">
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="people__card">
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img class="people__img" src="./images/Group.png" alt="Avatar">
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <div class="people__info">
+                                                <h3>Владислав Озеров</h3>
+                                                <h4>директор по рекламе</h4>
+                                                <ul>
+                                                    <li class="social-item">
+                                                        <img src="./images/facebook.svg" alt="facebookicon">
+                                                    </li>
+                                                    <li class="social-item">
+                                                        <img src="./images/twitter.svg" alt="twitter icon">
+                                                    </li>
+                                                    <li class="social-item">
+                                                        <img src="./images/insta.svg" alt="instagram icon">
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="people__card">
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img class="people__img" src="./images/Group.png" alt="Avatar">
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <div class="people__info">
+                                                <h3>Владислав Озеров</h3>
+                                                <h4>директор по рекламе</h4>
+                                                <ul>
+                                                    <li class="social-item">
+                                                        <img src="./images/facebook.svg" alt="facebookicon">
+                                                    </li>
+                                                    <li class="social-item">
+                                                        <img src="./images/twitter.svg" alt="twitter icon">
+                                                    </li>
+                                                    <li class="social-item">
+                                                        <img src="./images/insta.svg" alt="instagram icon">
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                    <div class="swiper mySwiper3">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide_1">
+                                <div class="people__card people__info">
+                                    <img src="./images/Group.png" alt="mobile">
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide_2">
+                                <div class="people__card">
+                                    <img src="./images/Group.png" alt="mobile">
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide_3">
+                                <div class="people__card">
+                                    <img src="./images/Group.png" alt="mobile">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination swiper-pagination3"></div>
+                        <div class="swiper-button-next swiper-next3"></div>
+                        <div class="swiper-button-prev swiper-prev3"></div>
+                    </div>
+                </section>
+                <section id="Cooperation" class="cooperation">
+                    <h2 class="cooperation__title hidden">СПІВПРАЦЯ</h2>
+                    <div class="about__wrapper">
+                        <div class="cooperation__img">
+                            <img src="./images/cooperation_ photo.jpg" alt="cooperation photo">
+                        </div>
+                        <div>
+                            <h2 class="cooperation__title">СПІВПРАЦЯ</h2>
+                        <p class="limited" id="cooperation__content">
+                            Мы предлагаем сотрудничество с нами всем, у кого есть медийность и возможность привлекать людей.
+                            Если вы верите в нас и наш продукт- вы тот кого мы ищем. Мы предлагаем способствовать развитию
+                            нашего приложения на медийной площадке. Если вы фотограф, ведете блог или просто человек который
+                            заинтересован в заработке - мы даем вам персональную ссылку, после регистрации по которой вам
+                            будут зачисляться средства и процент от нашего заработка с каждого приведенного пользователя.
+                            Так же хочу заметить что мы отдаем процент на нужды людей которые пострадали от войны в нашей
+                            стране.
+                        </p>
+                        <div class="btn__secondary-wrapper">
+                            <button id="cooperation_btn" class="btn__secondary">[ читать дальше ]</button>
+                        </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <div class="divider"></div>
+    <footer>
+        <div class="container">
+            <div class="footer__block">
+                <div id="contact" class="footer__content">
+                    <h3>CONNECT WITH US</h3>
+                    <div><a href="tel:+79875214">telephone: +79875214</a></div>
+                    <div><a href="mail:+79875214">e-mail: family@tree</a></div>
+                    <ul class="social-list">
+                        <li>
+                            <img src="./images/facebook.svg" alt="facebook">
+                            <span>facebook</span>
+                        </li>
+                        <li>
+                            <img src="./images/twitter.svg" alt="twitter">
+                            <span>twitter</span>
+                        </li>
+                        <li>
+                            <img src="./images/insta.svg" alt="instagram">
+                            <span>instagram</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__logo">
+                    <a href="./index.html"><img src="./images/logo.svg" alt="logo"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/burger.js"></script>
+    <script src="./js/hero_title_animation.js"></script>
+    <script src="./js/title_animation.js"></script>
+    <script src="./js/more_btn.js"></script>
+</body>
+
+</html>
