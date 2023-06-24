@@ -41,8 +41,6 @@ img {
     padding: 0px 20px;
 }
 
-
-
 a {
     display: block;
     text-decoration: none !important;
@@ -51,27 +49,26 @@ a {
 
 a:hover {
     color: white;
-
 }
 
 .main__bg {
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('./images/main_bg.png');
+    background-image: url('./images/main_bg.webp');
 }
 
 header {
     padding-top: 30px;
     background-repeat: no-repeat;
-    background-image: url('./images/header_bg.png');
+    background-image: url('./images/header_bg.webp');
     min-height: 570px;
 }
 
 .nav-button {
     display: inline-flex;
     position: relative;
-    z-index: 1;
+    z-index: 1001;
     padding: 0px;
     border: none;
     background-color: transparent;
@@ -84,7 +81,8 @@ header {
 
 .nav-button.is-open .menu-icon-close {
     display: block;
-    fill: white
+    fill: white;
+
 }
 
 .nav-button.is-open .menu-icon-open {
@@ -108,10 +106,11 @@ header {
     height: 100%;
     align-items: center;
     padding-top: 20%;
+    z-index: 1000;
+    overflow-x: hidden;
 }
 
 .menu.is-open li {
-
     font-size: 30px;
     line-height: 32px;
     margin-bottom: 30px;
@@ -142,11 +141,19 @@ nav {
 }
 
 .swiper-button-prev {
-    color: #40CA68; 
+    color: #40CA68;
 }
 
 .swiper-button-next {
-    color: #40CA68; 
+    color: #40CA68;
+}
+
+.swiper-wrapper {
+    padding-bottom: 40px;
+}
+
+.swiper-pagination{
+    bottom: 0px !important;
 }
 
 h1 {
@@ -159,8 +166,6 @@ h1 {
     font-size: 59px;
     line-height: 74px;
 }
-
-
 
 @keyframes expand {
     from {
@@ -219,7 +224,6 @@ h2 {
 
 .about {
     background: linear-gradient(250.58deg, #272A2D 0.98%, #283630 31.25%, #294A35 93.43%);
-    ;
     padding-bottom: 25px;
 }
 
@@ -247,7 +251,7 @@ h2 {
     margin: 0 auto;
 }
 
-.btn__secondary:hover{
+.btn__secondary:hover {
     cursor: pointer;
 }
 
@@ -349,16 +353,13 @@ footer h3 {
     display: none;
 }
 
-/* Swiper container stylng */
 .swiper {
     width: 100%;
     height: 100%;
 }
 
-
 .swiper-slide {
     text-align: center;
-    /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -384,6 +385,7 @@ footer h3 {
 .people__card {
     border-radius: 23px;
     background: linear-gradient(0deg, #CDCDCD 0%, #858585 100%);
+    overflow: hidden;
 }
 
 .people__img {
@@ -391,15 +393,12 @@ footer h3 {
     height: 100%;
 }
 
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
     width: 100%;
     height: 100%;
     perspective: 1000px;
-    /* Remove this if you don't want the 3D effect */
 }
 
-/* This container is needed to position the front and back side */
 .flip-card-inner {
     position: relative;
     width: 100%;
@@ -409,7 +408,6 @@ footer h3 {
     transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
@@ -418,7 +416,6 @@ footer h3 {
     display: none;
     border-bottom: 15px solid transparent;
     border-top: 15px solid transparent;
-
 }
 
 .desktop__people .people__card:hover .people__info {
@@ -431,7 +428,6 @@ footer h3 {
     border-color: #40CA68;
 }
 
-/* Position the front and back side */
 .flip-card-front,
 .flip-card-back {
     position: absolute;
@@ -440,15 +436,12 @@ footer h3 {
     width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden;
-    /* Safari */
     backface-visibility: hidden;
 }
 
-/* Style the back side */
 .flip-card-back {
     transform: rotateY(180deg);
 }
-
 
 .people__card span {
     font-weight: 400;
@@ -459,7 +452,7 @@ footer h3 {
     margin: auto;
 }
 
-.our-people-wrapper{
+.our-people-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -475,14 +468,23 @@ footer h3 {
     display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
+    .cooperation__title:not(.hidden),
+    .about__title:not(.hidden) {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 400px) {
     .hidden {
         display: none;
     }
-    .about__wrapper{
+
+    .about__wrapper {
         display: flex;
         flex-direction: row-reverse;
     }
+
     .hero__wrapper {
         display: flex;
         justify-content: space-between;
@@ -530,14 +532,13 @@ footer h3 {
     }
 
     header {
-        background-image: url('./images/Video_top.jpg');
+        background-image: url('./images/header_bg_desktop.webp');
         background-size: 100% 100%;
     }
 
     .about {
         padding-top: 45px;
     }
-
 
     .about__block h2 {
         padding-top: 0px;
@@ -553,7 +554,7 @@ footer h3 {
         align-items: center;
     }
 
-    .about__text-block{
+    .about__text-block {
         width: 344px;
         margin-right: 34px;
     }
@@ -617,7 +618,6 @@ footer h3 {
     .cooperation p {
         grid-area: subTitle;
         margin: 0px;
-
     }
 
     .cooperation .btn__secondary-wrapper {
@@ -666,7 +666,8 @@ footer h3 {
     .nav-button {
         display: none;
     }
-    .people__card{
+
+    .people__card {
         min-height: 384px;
     }
 
@@ -687,7 +688,6 @@ footer h3 {
 
     .action__wrapper {
         width: 100%;
-
         flex-direction: row-reverse;
     }
 
@@ -704,7 +704,6 @@ footer h3 {
     h1 {
         margin-bottom: 46px;
         margin-top: 48px;
-
     }
 
     .about__block .about__img-wrapper {
@@ -795,5 +794,9 @@ footer h3 {
 
     .cooperation__img {
         min-width: 560px;
+    }
+
+    .cooperation .btn__secondary-wrapper{
+        display: none;
     }
 }
